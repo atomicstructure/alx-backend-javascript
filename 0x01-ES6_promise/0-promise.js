@@ -4,3 +4,5 @@ function getResponseFromAPI() {
     console.log(response instanceof Promise);
   });
 }
+
+getResponseFromAPI();
