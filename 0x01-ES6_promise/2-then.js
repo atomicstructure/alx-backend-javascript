@@ -1,4 +1,4 @@
-function handleResponseFromAPI(promise) {
+export default function handleResponseFromAPI(promise) {
   // append a handler for when the promise resolves
   return promise
     .then(() => ({ status: 200, body: 'success' }))
