@@ -1,18 +1,10 @@
-export default class Airport extends Building {
-  constructor() {
-    super(100000);
-    this._hangars = [];
+export default class Airport {
+  constructor(name, code) {
+    this._name = name;
+    this._code = code;
   }
 
-  get hangars() {
-    return this._hangars;
-  }
-
-  set hangars(hangar) {
-    this._hangars.push(hangar);
-  }
-
-  evacuationWarningMessage() {
-    return 'Evacuate immediately. The airport is on fire.';
+  toString() {
+    return this._code;
   }
 }
